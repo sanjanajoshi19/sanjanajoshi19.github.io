@@ -1,0 +1,150 @@
+:root {
+  --bg: #0d0221;
+  --panel: rgba(255, 255, 255, 0.1);
+  --text: #f4efff;
+  --accent: #ff7f50;
+  --accent-2: #7f5af0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 20%, #421b82 0%, transparent 40%),
+    radial-gradient(circle at 80% 10%, #ff6f91 0%, transparent 35%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 90vh;
+  padding: 1.5rem 6vw 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.dot {
+  color: var(--accent);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.hero-content {
+  margin-top: 16vh;
+  max-width: 600px;
+}
+
+.intro {
+  opacity: 0.8;
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 1rem 0 2rem;
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.3rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10px);
+  opacity: 0.55;
+}
+
+.blob-1 {
+  width: 280px;
+  height: 280px;
+  background: #ff7f50;
+  top: 15%;
+  right: -70px;
+}
+
+.blob-2 {
+  width: 360px;
+  height: 360px;
+  background: #7f5af0;
+  bottom: -150px;
+  left: -100px;
+}
+
+main {
+  padding: 0 6vw 3rem;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+  padding: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.contact {
+  text-align: center;
+}
